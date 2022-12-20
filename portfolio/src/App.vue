@@ -1,6 +1,7 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
 import HelloWorld from './components/HelloWorld.vue'
+import { Dropdown, ListGroup, ListGroupItem } from 'flowbite-vue'
 </script>
 
 <template>
@@ -14,6 +15,13 @@ import HelloWorld from './components/HelloWorld.vue'
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/about">About</RouterLink>
       </nav>
+      <dropdown text="Click me" placement="top">
+        <list-group>
+          <list-group-item>Item #1</list-group-item>
+          <list-group-item>Item #2</list-group-item>
+          <list-group-item>Item #3</list-group-item>
+        </list-group>
+      </dropdown>
     </div>
   </header>
 
