@@ -5,8 +5,8 @@ import { Dropdown, ListGroup, ListGroupItem } from 'flowbite-vue'
 </script>
 
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
+  <header class="100vh flex ">
+    <img alt="Vue logo" class="logo" src="assets/imgs/my-logo.png" width="125" height="125" />
 
     <div class="wrapper">
       <HelloWorld msg="You did it!" />
@@ -14,6 +14,7 @@ import { Dropdown, ListGroup, ListGroupItem } from 'flowbite-vue'
       <nav>
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/about">About</RouterLink>
+        <RouterLink to="/portfolio">Portfolio</RouterLink>
       </nav>
       <dropdown text="Click me" placement="top">
         <list-group>
@@ -22,6 +23,7 @@ import { Dropdown, ListGroup, ListGroupItem } from 'flowbite-vue'
           <list-group-item>Item #3</list-group-item>
         </list-group>
       </dropdown>
+
     </div>
   </header>
 
